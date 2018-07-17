@@ -13,10 +13,11 @@ function escribeTras2Segundos(texto, callBack) {
 //Bucle asíncrono en serie
 //Llamara  a una función n veces en series (Asíncrona)
 function serie(n, funcionQueHayQueLlamar, callBackFinalizacion) {
-    if (n == 0) {
+    if (n === 0) {
         callBackFinalizacion()
         return
     }
+
     n = n - 1;
     funcionQueHayQueLlamar('Texto' + n, () => {
         //Cuando termine de esperar los 2 segundos
