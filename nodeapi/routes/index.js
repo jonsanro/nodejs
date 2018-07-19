@@ -15,4 +15,15 @@ router.get('/otrapagina', function(req, res, next) {
 
 })
 
+router.get('/paramenruta/:dato', (req, res, next) => {
+    const dato = req.params.dato;
+    res.send('ok, recibido dato: ' + dato)
+});
+
+router.get('/params/:id([0-9]+/piso/:piso/puerta/:puerta)', (req, res, next) => {
+
+    const id = req.params.dato;
+    res.send('ok, recibido dato: ' + dato)
+});
+
 module.exports = router;
