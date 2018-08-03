@@ -1,0 +1,46 @@
+{
+    "anuncios": [{
+            "name": "Macbook Air",
+            "sell": true,
+            "price": 1100,
+            "photo": "http://localhost:3000/images/macbook-air.jpeg",
+            "tag": ["Informática", "Mac"]
+
+        },
+        {
+            "name": "Iphone X",
+            "sell": true,
+            "price": 1200,
+            "photo": "http://localhost:3000/images/iphone-x.png",
+            "tag": ["Informática", "Iphone"]
+        },
+        {
+            "name": "Macbook Pro",
+            "sell": true,
+            "price": 1500,
+            "photo": "http://localhost:3000/images/macbook-pro.jpeg",
+            "tag": ["Informática", "Mac"]
+        },
+        {
+            "name": "BMW Serie 3",
+            "sell": false,
+            "price": 27000,
+            "photo": "http://localhost:3000/images/bmw-serie-3.jpg",
+            "tag": ["coches", "bmw"]
+        },
+        {
+            "name": "BMW Serie 1",
+            "sell": true,
+            "price": 41000,
+            "photo": "http://localhost:3000/images/bmw-serie-1.jpg",
+            "tag": ["coches", "bmw"]
+        },
+        {
+            "name": "Volvo V60",
+            "sell": true,
+            "price": 54000,
+            "photo": "http://localhost:3000/images/volvo-v60.jpg",
+            "tag": ["coches", "volvo"]
+        }
+    ]
+}

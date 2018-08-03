@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //app.use('/pdfs', express.static('e:\pdfs',));
 
 //Variables globales de template
-app.locals.titulo = 'nodeAPI';
+app.locals.titulo = 'Nodepop';
 
 /**
  * Conectamos a la base de datos
@@ -31,12 +31,12 @@ app.locals.titulo = 'nodeAPI';
  */
 
 require('./lib/connectMongoose');
-require('./models/Agente');
+require('./models/Anuncio');
 
 /**
  * Rutas de mi API
  */
-app.use('/apiv1/agentes', require('./routes/apiv1/agentes'));
+app.use('/apiv1/anuncios', require('./routes/apiv1/anuncios'));
 
 
 /**

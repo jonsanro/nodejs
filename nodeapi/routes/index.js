@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 
     const segundo = (new Date()).getSeconds();
 
-    res.locals.valor = '<script>alert("ha,ha,ha")</script>';
+    res.locals.valor = '<script>alert("Bienvenid@ a la página de anuncios de Jon")</script>';
 
     //La vista se renderiza (calcula) EN EL SERVIDOR
     res.render('index', {
