@@ -16,29 +16,36 @@
         <%= titulo %>
     </p>
 
-    <h3>Valor</h3>
-    <p>
-        <%- valor %>
-    </p>
-
-
-    <h3>Incluyendo una condición</h3>
-    <% if (condicion.par) { %>
-        <p>
-            <%- condicion.segundo %> es par</p>
-        <% }else{ %>
-            <p>
-                <%- condicion.segundo %>es par</p>
-            <% } %>
 
 
 
-                <h3>Incluyendo un bucle</h3>
-                <% users.forEach(function(user) { %>
-                    <p>
-                        <%= user.name + ' ' + user.age %>
-                    </p>
-                    <% }) %>
+
+    <h3>Listado de productos disponibles/h3>
+        <p>-------------------------------</p>
+        <% anuncios.forEach(function(anuncios) { %>
+            <h2>Producto</h1>
+                <p>
+                    Nombre:
+                    <%= anuncios.name %>
+                </p>
+                <p>
+                    Está a la venta:
+                    <%= anuncios.sell %>
+                </p>
+                <p>
+                    Precio:
+                    <%= anuncios.price %>
+                </p>
+                <p>
+                    Foto:
+                    <div><img src="<%=anuncios.photo %>" alt=""></div>
+                </p>
+                <p>
+                    Tag :
+                    <%= anuncios.tag %>
+                </p>
+                <p>-------------------------------</p>
+                <% }) %>
 
 
 </body>
