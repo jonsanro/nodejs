@@ -16,6 +16,14 @@ To start the application in production use:
 npm start
 ```
 
+##Initialize DataBase
+
+To initialize and update the database run:
+
+```shell
+node install_db.js
+```
+And write yes as answer.
 
 ## Development
 
