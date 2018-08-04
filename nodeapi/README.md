@@ -16,7 +16,7 @@ To start the application in production use:
 npm start
 ```
 
-##Initialize DataBase
+## Initialize DataBase
 
 To initialize and update the database run:
 
@@ -33,14 +33,14 @@ Actually isn´t working properly, so if you want to run it use de npm start meth
 npm run dev
 ```
 
-##Use
+## Use
 
 The home is located at localhost:3000 port. 
 If you want to filter the products you can add name, sell, price, photo, tag or id filters. 
 For example:
 *http://localhost:3000/?tag=Mac*
 
-##Create
+## Create
 
 To create a new product you can make a post with postman.
 1. The API is located at: *http://localhost:3000/apiv1/anuncios*
