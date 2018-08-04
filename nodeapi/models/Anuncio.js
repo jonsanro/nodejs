@@ -19,7 +19,7 @@ anuncioSchema.statics.listar = function(filtro, limit, skip, fields, sort) {
     query.select(fields);
     query.sort(sort);
     return query.exec();
-}
+};
 
 // crear el modelo con ese esquema
 const Anuncio = mongoose.model('Anuncio', anuncioSchema);

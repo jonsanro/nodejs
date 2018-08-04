@@ -3,13 +3,10 @@ var router = express.Router();
 const axios = require('axios');
 const Anuncio = require('../models/Anuncio');
 
-const url = 'https://swapi.co/api/planets/1/';
 const { query, validationResult } = require('express-validator/check');
 
 /* GET home page. */
 router.get('/', async(req, res, next) => {
-
-
     try {
         // recuperar datos de entrada
         const name = req.query.name;
@@ -57,9 +54,5 @@ router.get('/', async(req, res, next) => {
         next(err);
     }
 });
-
-
 //La vista se renderiza (calcula) EN EL SERVIDOR
-
-
 module.exports = router;
